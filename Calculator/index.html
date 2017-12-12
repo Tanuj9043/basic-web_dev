@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+	.head {
+		font-family: black;
+		font-weight: 900;
+		font-size: 2rem !important;
+		color: #fbcb79;
+	}
+	.row .col {
+		font-size: 0.8rem;
+	}
+	.row .col.s12 {
+		font-size: 1.5rem;
+	}
+	@media only screen and (min-width: 420px){
+		.head {
+			font-size: 2.5rem;
+			font-size: 3rem !important;
+		}
+		.row .col {
+			font-size: 1.3rem;
+		}
+	}
+	@media only screen and (min-width: 720px){
+		.head {
+			font-size: 3rem;
+			font-size: 4rem !important;
+		}
+	}
+  </style>
+</head>
+<body>
+	<div class="row">
+      <div class="col s12">
+        <div class="card-panel z-depth-1" style="background-color: #ffd0b7">
+          <div class="center-align head z-depth-3 grey lighten-3">
+			CALCULATOR
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class="container">
+		<div class="container">
+			<div class="row input-field">
+				<input id="in" type="text" class="validate right-align col s12 inp">
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<a class="waves-effect waves-light btn col s5 red" id="clr">CLR</a>
+				<a class="waves-effect waves-light btn col s5 offset-s2 teal" id="eq">=</a>
+			</div>
+			<div class="row">
+				<a class="waves-effect waves-light btn col s5 grey" id="sin">sin</a>
+				<a class="waves-effect waves-light btn col s2 offset-s2 grey" id="add">+</a>
+				<a class="waves-effect waves-light btn col s2 offset-s1 grey" id="sub">-</a>
+			</div>
+			<div class="row">
+				<a class="waves-effect waves-light btn  col s2 grey" id="cos">cos</a>
+				<a class="waves-effect waves-light btn  col s2 offset-s1 grey" id="tan">tan</a>
+				<a class="waves-effect waves-light btn  col s2 offset-s2 grey" id="mul">*</a>
+				<a class="waves-effect waves-light btn  col s2 offset-s1 grey" id="div">/</a>
+			</div>
+			<div class="row">
+				<a class="waves-effect waves-light btn  col s2 grey" id="log">log</a>
+				<a class="waves-effect waves-light btn  col s2 offset-s1 grey" id="sqrt">sqrt</a>
+				<a class="waves-effect waves-light btn  col s5 offset-s2 grey" id="mod">%</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>

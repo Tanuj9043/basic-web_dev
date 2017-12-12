@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation</title>
+  <style>
+    body {
+      margin: 0px;
+      overflow-x:hidden;
+      background-image: url('bg.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .bg {
+      height: 620px;
+    }
+
+    .sky {
+      position: relative;
+      height: 9%;
+      display: flex;
+      top: 1%;
+    }
+
+    .cloud {
+      position: relative;
+      width: 12%;
+      background-image: url('cloud.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 100%;
+      animation-name: cloud;
+      animation-iteration-count: infinite;
+      animation-duration: 50s;
+    }
+
+    .plane {
+      position: relative;
+      width: 12%;
+      left: 4%;
+      height: 100%;
+      background-image: url('plane.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 100;
+      transform: translateX(200px);
+      animation-name: plane;
+      animation-iteration-count: infinite;
+      animation-duration: 10s;
+    }
+
+    .text {
+      position: relative;
+      width: 30%;
+      height: 75%;
+      background-color: cyan;
+      border: 2px solid brown;
+      text-align: center;
+      font-size: 180%;
+      z-index: 100;
+      animation-name: plane;
+      animation-iteration-count: infinite;
+      animation-duration: 10s;
+    }
+
+    .car1 {
+      position: relative;
+      background-image: url('car1.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 12%;
+      top: 60%;
+      animation-name: car1;
+      animation-iteration-count: infinite;
+      animation-duration: 7s;
+    }
+
+    .car2 {
+      position: relative;
+      background-image: url('car2.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 12%;
+      top: 62%;
+      animation-name: car2;
+      animation-iteration-count: infinite;
+      animation-duration: 6s;
+    }
+
+    @keyframes plane {
+      from {
+        transform: translateX(1450px);
+      }
+      to {
+        transform: translateX(-900px);
+      }
+    }
+
+    @keyframes cloud {
+      from {
+        transform: translateX(-120px);
+      }
+      to {
+        transform: translateX(1450px);
+      }
+    }
+
+    @keyframes car1 {
+      from {
+        transform: translateX(-250px);
+      }
+      to {
+        transform: translateX(1550px);
+      }
+    }
+
+    @keyframes car2 {
+      from {
+        transform: translateX(1500px);
+      }
+      to {
+        transform: translateX(-500px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg">
+    <div class="sky">
+      <div class="cloud"></div>
+      <div class="plane"></div>
+      <div class="text"><u>Hello!! Have a nice Day!</u></div>
+    </div>
+    <div class="car1"></div>
+    <div class="car2"></div>
+  </div>
+</body>
+</html>
